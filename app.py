@@ -5,16 +5,16 @@ import neattext as ntx
 import pickle
 
 # Leer los dataset
-symptoms = pd.read_csv("datasets\\Symptom-severity.csv")
-precaution = pd.read_csv("datasets\\precaution.csv", index_col=[0])
-workout = pd.read_csv("datasets\\workout.csv")
-description = pd.read_csv("datasets\\description.csv")
-medications = pd.read_csv('datasets\\medications.csv')
-diets = pd.read_csv("datasets\\diets.csv")
+symptoms = pd.read_csv("datasets/Symptom-severity.csv")
+precaution = pd.read_csv("datasets/precaution.csv", index_col=[0])
+workout = pd.read_csv("datasets/workout.csv")
+description = pd.read_csv("datasets/description.csv")
+medications = pd.read_csv('datasets\/medications.csv')
+diets = pd.read_csv("datasets/diets.csv")
 
 
 #cargar modelo
-svc = pickle.load(open('Modelo\\model.pkl','rb'))
+svc = pickle.load(open('Modelo/model.pkl','rb'))
 
 # funciones
 # funcion de filtros de datasets
