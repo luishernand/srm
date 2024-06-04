@@ -1,12 +1,12 @@
 # Sistema de Recomendación Médica
 
-Analiza los síntomas introducidos por el usuario para predecir enfermedades potenciales con precisión. Esto es lo que distingue a nuestro sistema:
+Analiza los síntomas introducidos por el usuario para predecir enfermedades potenciales con precisión. Este sistema fue creado en Python y la interfaz fue desarrollada en Streamlit.
 
 ## Interfaz fácil de usar
-Nuestra interfaz intuitiva permite a los usuarios ingresar sus síntomas sin esfuerzo, creando una experiencia de usuario perfecta.
+Nuestra interfaz intuitiva creada con Streamlit permite a los usuarios ingresar sus síntomas sin esfuerzo, creando una experiencia de usuario perfecta.
 
 ## Modelos avanzados de aprendizaje automático
-Hemos integrado modelos de aprendizaje automático de última generación que predicen con precisión enfermedades en función de los síntomas de entrada, lo que garantiza resultados confiables y precisos.
+Hemos integrado modelos de aprendizaje automático de última generación en Python que predicen con precisión enfermedades en función de los síntomas de entrada, lo que garantiza resultados confiables y precisos.
 
 ## Recomendaciones personalizadas
 Reciba recomendaciones personalizadas para los 5 medicamentos principales, detalles de prescripción e incluso rutinas de ejercicios basadas en la enfermedad prevista.
