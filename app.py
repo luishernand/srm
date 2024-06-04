@@ -26,12 +26,12 @@ def helper(dis):
   pre = [col for col in pre.values]
   
   med = medications[medications['Disease'] == dis]['Medication']
-  #med = [col for col in med.values]
-  med = ' '.join(w for w in med)
+  med = [col for col in med.values]
+  #med = ' '.join(w for w in med)
 
   diet = diets[diets['Disease'] == dis]['Diet']
-  #diet = [col for col in diet.values]
-  diet = ' '.join(w for w in diet)
+  diet = [col for col in diet.values]
+  #diet = ' '.join(w for w in diet)
 
   wrkout = workout[workout['disease'] == dis]['workout']
   wrkout = [col for col in wrkout.values]
