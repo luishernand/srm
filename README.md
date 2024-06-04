@@ -1,4 +1,4 @@
-# Sistema de Recomandacion Medica  
+# Sistema de Recomendación Medica  
 
 analiza los síntomas introducidos por el usuario para predecir enfermedades potenciales con precisión. 
 Esto es lo que distingue a nuestro sistema:
