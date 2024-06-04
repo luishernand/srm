@@ -10,7 +10,7 @@ Utilizando  modelos de aprendizaje automático en `python`, creando dos  interfa
 | Archivo | Descripción  |
 |----------|-------------|
 | [Sistema Medico](https://nbviewer.org/github/luishernand/srm/blob/main/Sistema_de_Medico.ipynb)  |Podras ver los algoritmos de machine learning para predecir la enfermedad y filtar los archivos base |     
-| [app](https://sistemarm.streamlit.app/)   | interfaz realizada en streamlit |
+| [app](https://sistemarm.streamlit.app/)   | streamlit web app  |
 | [main](https://github.com/luishernand/srm/blob/main/main.py)  | Interfaz creada en flask |
 
 
