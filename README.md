@@ -13,7 +13,7 @@ Utilizando  modelos de aprendizaje automático en `python`, creando dos  interfa
 | [app]([https://github.com/luishernand/fuga_empleados/blob/main/app.py](https://github.com/luishernand/srm/blob/main/app.py))   | interfaz en streamlit con la predicción de y las recomenación |
 | [main](https://github.com/luishernand/srm/blob/main/main.py)  | Interfaz creada en flask |
 
-![PBI](https://github.com/luishernand/fuga_empleados/blob/main/PBI.png)
+
 
 ## Carpeta de Proyectos    
 - Aqui encontraras todos mis proyectos de forma organizada  con sus respectivos archivos.  
