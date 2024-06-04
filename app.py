@@ -9,7 +9,7 @@ symptoms = pd.read_csv("datasets/Symptom-severity.csv")
 precaution = pd.read_csv("datasets/precaution.csv", index_col=[0])
 workout = pd.read_csv("datasets/workout.csv")
 description = pd.read_csv("datasets/description.csv")
-medications = pd.read_csv('datasets\/medications.csv')
+medications = pd.read_csv('datasets/medications.csv')
 diets = pd.read_csv("datasets/diets.csv")
 
 
