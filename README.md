@@ -1,5 +1,5 @@
 # Sistema de Recomendación Médica
-**Descripción:**
+**Descripción:**  
 Analiza los síntomas introducidos por el usuario para predecir enfermedades potenciales con precisión. Este sistema fue creado con modelos de aprendizaje automático en `python`, y  las dos  interfaces en `Streamlit` y `Flask`.
 
 ## Interfaz fácil de usar
