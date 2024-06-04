@@ -1,6 +1,5 @@
 streamlit
 pandas
 numpy
-Pillow
 neattext
 pickle
