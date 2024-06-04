@@ -5,16 +5,16 @@ import neattext as ntx
 import pickle
 
 # Leer los dataset
-symptoms = pd.read_csv("C:\\Users\\User\OneDrive\\Documentos\\Cursos de ML\\Artificial Intelligence\\Sistema de Recomendacion Medico\\datasets\\Symptom-severity.csv")
-precaution = pd.read_csv("C:\\Users\\User\OneDrive\\Documentos\\Cursos de ML\\Artificial Intelligence\\Sistema de Recomendacion Medico\\datasets\\precaution.csv", index_col=[0])
-workout = pd.read_csv("C:\\Users\\User\OneDrive\\Documentos\\Cursos de ML\\Artificial Intelligence\\Sistema de Recomendacion Medico\\datasets\\workout.csv")
-description = pd.read_csv("C:\\Users\\User\OneDrive\\Documentos\\Cursos de ML\\Artificial Intelligence\\Sistema de Recomendacion Medico\\datasets\\description.csv")
-medications = pd.read_csv('C:\\Users\\User\OneDrive\\Documentos\\Cursos de ML\\Artificial Intelligence\\Sistema de Recomendacion Medico\\datasets\\medications.csv')
-diets = pd.read_csv("C:\\Users\\User\OneDrive\\Documentos\\Cursos de ML\\Artificial Intelligence\\Sistema de Recomendacion Medico\\datasets\\diets.csv")
+symptoms = pd.read_csv("datasets\\Symptom-severity.csv")
+precaution = pd.read_csv("datasets\\precaution.csv", index_col=[0])
+workout = pd.read_csv("datasets\\workout.csv")
+description = pd.read_csv("datasets\\description.csv")
+medications = pd.read_csv('datasets\\medications.csv')
+diets = pd.read_csv("datasets\\diets.csv")
 
 
 #cargar modelo
-svc = pickle.load(open('C:\\Users\\User\\OneDrive\\Documentos\\Cursos de ML\\Artificial Intelligence\\Sistema de Recomendacion Medico\Modelo\\model.pkl','rb'))
+svc = pickle.load(open('Modelo\\model.pkl','rb'))
 
 # funciones
 # funcion de filtros de datasets
@@ -56,7 +56,7 @@ def get_predicted_value(patient_symptoms):
 #-------------------------------------------------------------------------#
 # Titulo
 #st.title('Sistema de recomendación Medica')
-st.image('C:\\Users\\User\\OneDrive\\Documentos\\Cursos de ML\\Artificial Intelligence\Sistema de Recomendacion Medico\\logo1.png')
+st.image('logo1.png')
 
 data = pd.Series(symptoms_dict).to_frame().T
 columnas = data.columns
