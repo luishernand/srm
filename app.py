@@ -99,7 +99,7 @@ if st.sidebar.button('Predecir'):
       st.write(wrkout)
 
    with t3:
-    diet = diet.split()
+    #diet = diet.split()
     diet = pd.DataFrame(diet, columns = ['Dieta'])
     diet['Dieta'] = diet['Dieta'].apply(ntx.remove_puncts)
     diet['Dieta'] = diet['Dieta'].str.replace(r'\[', '', regex=True).replace(']', '', regex =True)
