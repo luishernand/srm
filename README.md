@@ -9,8 +9,8 @@ Utilizando  modelos de aprendizaje automático en `python`, creando dos  interfa
 ### Código fuente: 
 | Archivo | Descripción  |
 |----------|-------------|
-| [Sistema Medico]([https://nbviewer.org/github/luishernand/fuga_empleados/blob/main/Abandono%20de%20empleados.ipynb](https://nbviewer.org/github/luishernand/srm/blob/main/Sistema_de_Medico.ipynb))  |Podras ver los algoritmos de machine learning para predecir la enfermedad y filtar los archivos base |     
-| [app]([https://github.com/luishernand/fuga_empleados/blob/main/app.py](https://github.com/luishernand/srm/blob/main/app.py))   | interfaz en streamlit con la predicción de y las recomenación |
+| [Sistema Medico](https://nbviewer.org/github/luishernand/srm/blob/main/Sistema_de_Medico.ipynb)  |Podras ver los algoritmos de machine learning para predecir la enfermedad y filtar los archivos base |     
+| [app](https://github.com/luishernand/srm/blob/main/app.py)   | interfaz en streamlit con la predicción de y las recomenación |
 | [main](https://github.com/luishernand/srm/blob/main/main.py)  | Interfaz creada en flask |
 
 
