@@ -97,11 +97,13 @@ if st.sidebar.button('Predecir'):
   
    with t4:
       w = pd.DataFrame(wrkout,columns= ['Recomendaciones'], index=range(1, len(wrkout) + 1))
-      st.write(w)
+   
+      st.write(w.head())
 
    with t3:
-    diet = diet.split()
-    diet = pd.DataFrame(diet, columns = ['Dieta'])
+    diet = diet.split(',')
+    #st.write(diet)
+    diet = pd.DataFrame(diet, columns = ['Dieta'], index=range(1, len(diet) + 1))
     #diet['Dieta'] = diet['Dieta'].apply(ntx.remove_puncts)
     diet['Dieta'] = diet['Dieta'].str.replace(r'\[', '', regex=True).replace("'", '', regex =True).replace(']', '', regex =True)
 
