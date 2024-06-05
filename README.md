@@ -13,8 +13,10 @@ Utilizando  modelos de aprendizaje automático en `python`, creando dos  interfa
 | [app](https://sistemarm.streamlit.app/)   | streamlit web app  |
 | [main](https://github.com/luishernand/srm/blob/main/main.py)  | Interfaz creada en flask |
 
+**Flask**  
 ![flask](https://github.com/luishernand/srm/blob/main/flask.JPG)
 
+**streamlit**  
 ![streamlit](https://github.com/luishernand/srm/blob/main/streamlit.JPG)
 
 ## Carpeta de Proyectos    
