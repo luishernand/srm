@@ -87,7 +87,8 @@ if st.sidebar.button('Predecir'):
 
 
    with t2:
-      med = med.split()
+      med = med.split(',')
+      #st.write(med)
       medi = pd.DataFrame(med, columns = ['Medicamentos'], index=range(1, len(med) + 1))
       #medi['Medicamentos'] = medi['Medicamentos'].apply(ntx.remove_puncts)
       medi['Medicamentos'] = medi['Medicamentos'].str.replace(r'\[', '', regex=True).replace("'", '', regex =True).replace(']', '', regex =True)
