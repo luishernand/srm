@@ -26,8 +26,8 @@ def helper(dis):
   pre = [col for col in pre.values]
   
   med = medications[medications['Disease'] == dis]['Medication']
-  med = [col for col in med.values]
-  #med = ' '.join(w for w in med)
+  #med = [col for col in med.values]
+  med = ' '.join(w for w in med)
 
   diet = diets[diets['Disease'] == dis]['Diet']
   #diet = [col for col in diet.values]
@@ -81,28 +81,28 @@ if st.sidebar.button('Predecir'):
 
    t1, t2,t3,t4 = st.tabs(['Precaución', 'Medicamento', 'Dieta', 'Recomendación'])
    with t1:
-      prec = pd.DataFrame(pre, columns = ['prec1', 'prec2', 'prec3', 'prec4']).T.reset_index(drop=True)
+      prec = pd.DataFrame(pre, columns = ['prec1', 'prec2', 'prec3', 'prec4']).T.reset_index(drop=True).rename(lambda x: x + 1)
       prec.rename(columns = {0:'Precauciones'}, inplace =True)
       st.dataframe(prec)
 
 
    with t2:
-      #med = med.split()
-      medi = pd.DataFrame(med, columns = ['Medicamentos'])
-      medi['Medicamentos'] = medi['Medicamentos'].apply(ntx.remove_puncts)
-      medi['Medicamentos'] = medi['Medicamentos'].str.replace(r'\[', '', regex=True).replace(']', '', regex =True)
+      med = med.split()
+      medi = pd.DataFrame(med, columns = ['Medicamentos'], index=range(1, len(med) + 1))
+      #medi['Medicamentos'] = medi['Medicamentos'].apply(ntx.remove_puncts)
+      medi['Medicamentos'] = medi['Medicamentos'].str.replace(r'\[', '', regex=True).replace("'", '', regex =True).replace(']', '', regex =True)
 
       st.write(medi)
   
    with t4:
-      wrkout = pd.DataFrame(wrkout,columns= ['Recomendaciones'])
-      st.write(wrkout)
+      w = pd.DataFrame(wrkout,columns= ['Recomendaciones'], index=range(1, len(wrkout) + 1))
+      st.write(w)
 
    with t3:
     diet = diet.split()
     diet = pd.DataFrame(diet, columns = ['Dieta'])
-    diet['Dieta'] = diet['Dieta'].apply(ntx.remove_puncts)
-    diet['Dieta'] = diet['Dieta'].str.replace(r'\[', '', regex=True).replace(']', '', regex =True)
+    #diet['Dieta'] = diet['Dieta'].apply(ntx.remove_puncts)
+    diet['Dieta'] = diet['Dieta'].str.replace(r'\[', '', regex=True).replace("'", '', regex =True).replace(']', '', regex =True)
 
     st.dataframe(diet)
 
